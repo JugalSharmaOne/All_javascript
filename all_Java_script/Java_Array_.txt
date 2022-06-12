@@ -1,0 +1,238 @@
+Array Simple
+
+
+
+::
+let a = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+
+    [9, 10, 11, 12]
+];
+
+console.log(a.length);
+
+
+
+::Map method
+
+let b = ["jugal", "shartma", "kanika", "karan"];
+
+
+console.log(b.sort());
+
+let ma = b.map((element, index, array) => {
+
+
+
+    return element + " " + index + " " + array
+
+
+})
+
+
+console.log(ma)
+
+
+
+::flitter
+
+
+
+let a = [7, 10, 45, 63, 52];
+
+
+let fe = a.filter((elemet) => {
+
+
+    return elemet > 20;
+
+})
+
+
+console.log(fe)
+
+
+
+::find
+
+
+
+let a = [7, 10, 45, 63, 52];
+
+
+let fe = a.find((elemet) => {
+
+
+    return elemet < 20;
+
+})
+
+
+console.log(fe)
+
+
+
+//findindex
+
+
+
+
+
+const price = [100, 500, 700, 400, 600]
+
+
+
+const findelem = price.findIndex((currva) => {
+
+
+
+    return currva > 100;
+})
+
+console.log(findelem)
+
+
+
+
+//Push
+
+let arr1 = ['jugal', 'sharma', 'mama'];
+
+
+arr1.push("KANIKA"); // add last index number
+
+
+console.log(arr1)
+
+
+
+//unshift
+
+arr2 = ["jugal", "sharma", "karan"]
+
+
+arr2.unshift("NIKHEL"); //add first line element
+
+
+console.log(arr2)
+
+
+
+
+//pop
+
+
+
+//pop is  remove last elements array
+
+arr3 = ["jugal", "sharma", "karan"]
+
+
+arr3.pop("karan")
+
+
+console.log(arr3)
+
+
+
+//shift
+
+
+//shift is  remove first elements array
+
+
+arr4 = ["jugal", "sharma", "karan"]
+
+arr4.shift("jugal")
+
+
+
+
+//forEach
+
+
+
+let arr7 = ["jugal", "sharma", "karan", "nanu"]
+
+
+arr7.forEach((elemn, index, arra) => {
+
+
+
+    console.log(" this is elemnt " + elemn + " this index " + index + " this is array  " + arra)
+
+
+})
+
+// console.log(arr7)
+
+
+console.log(arr4)
+
+
+
+
+
+
+let friend = ["jugal", "kanika", "karan", "nanu"]
+
+
+console.log(friend.indexOf("karan"))
+
+
+
+let frien = ["jugal", "kanika", "karan", "nanu"]
+
+
+console.log(frien.lastIndexOf("jugal"))
+
+
+
+
+
+
+//splices array define
+
+
+
+
+arr5=["jugal" , "sharma" , "karan"]
+
+
+arr5.splice(4,0,"NANU")
+
+
+
+console.log(arr5)
+
+
+
+
+
+
+//array for  and in  important
+
+
+
+
+
+let arr6 = ["jugal", "sharma", "karan"]
+
+
+
+
+for (let element in arr6) {
+
+
+    console.log(element)
+
+
+}
+
+
+for (let element of arr6) {
+
+    console.log(element)
+
+}

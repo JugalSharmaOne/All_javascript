@@ -1,0 +1,86 @@
+:://JavaScript-DataType
+
+
+let a = "jugal sharma";
+
+console.log(typeof(a));
+
+
+let b = 45;
+
+console.log(typeof(b));
+
+let c = true;
+
+console.log(typeof(c));
+
+let d = undefined;
+
+console.log(typeof(d));
+
+let e;
+
+console.log(e)
+
+
+console.log("jugal" - 4);
+
+
+// console.log(NaN(f))
+
+
+//NULL TEST
+let f = null;
+console.log(f)
+
+//isNaN
+
+let g = 12456;
+
+console.log(isNaN(g))
+
+
+
+//expression of operators type
+
+
+::what is assignmet opeartor
+
+
+console.log(10 == 10)
+
+
+
+::arithmetic operator
+
+console.log(5 + 5)
+
+console.log(10 - 5)
+console.log(4 * 5)
+
+
+
+:: != both are not equal 
+console.log(5 != 5)
+
+console.log(5 > 7)
+
+
+
+
+::logical opearion
+
+
+console.log(4 < 5 && 4 < 5) // && all value is both true
+
+
+
+console.log(4 > 5 || 4 < 5) // !!
+
+
+console.log(!4 > 0 || b < 0)
+
+
+
+
+

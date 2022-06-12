@@ -1,0 +1,103 @@
+//Smiple start start
+
+
+
+let a = "jugal sharma";
+
+console.log(a)
+
+console.log(a.indexOf("g"))
+
+
+console.log(a.lastIndexOf("g"))
+
+console.log(a.includes("hello")) //meaning of includes true and false
+
+
+
+//::slice
+
+let a = "jugal sakarma kumar";
+
+
+console.log(a.slice(0, 10))
+
+
+let e = "jugal sharma i am jugal";
+
+
+
+
+// //concat add toe string  variable
+ 
+
+// let one="jugal"
+
+
+// let two="sharma"
+
+
+// console.log(one.concat(one ,two))
+
+
+
+
+
+
+//::substring not use nagtive vale not use
+
+
+let sub = ("apple , banana , kiwi");
+
+let su = sub.substring(4, -13)
+
+console.log(su)
+
+
+
+
+//substr
+
+
+let stra = ("apple , banana , kiwi");
+
+let ju = stra.substr(0, -5)
+
+console.log(ju)
+
+
+
+
+//search in staring a string
+
+
+
+let g = "jugal sharma i am jugal";
+
+console.log(g.search("sharma", 4))
+
+
+
+//object convert JSON
+
+
+
+// var my_name = {
+
+//     key_1: "jgal sharma",
+
+//     key_2: true,
+
+//     key_3: 5
+
+// }
+
+
+
+// var oject = JSON.parse(my_name)
+
+// console.log(oject)
+// typeof(oject)
+
+
+

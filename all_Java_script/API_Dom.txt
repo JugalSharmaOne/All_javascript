@@ -1,0 +1,121 @@
+//API IN javascript
+
+const fun = async() => {
+
+
+
+    try {
+
+        const api = await fetch("https://jsonplaceholder.typicode.com/users");
+
+
+
+        const user = await api.json();
+
+        console.log(user)
+
+
+    } catch (e) {
+
+
+
+        console.log(e + "this is error ")
+
+    }
+
+
+
+}
+
+fun()
+
+
+
+//USE API
+
+
+const hu = async() => {
+
+    const apis = await fetch("https://jsonplaceholder.typicode.com/users");
+
+
+
+    const users = await apis.json();
+
+
+    const bit = users[0].name;
+
+
+    document.getElementById("one").innerHTML = bit;
+
+
+}
+
+hu()
+
+
+
+
+
+
+//dom important
+
+
+
+const sun = () => {
+
+
+
+    let v = document.getElementById("one");
+
+
+    // alert("helllo jugal" + v)
+
+    console.log("hello jugal")
+
+
+}
+
+
+sun()
+
+
+
+
+//querySelector
+
+
+
+const call = () => {
+
+
+
+    document.querySelector(".classs");
+
+    // window.alert("hello")
+
+
+
+}
+
+call()
+
+ 
+//::addEventListener
+
+
+// const don = document.querySelector("#don");
+
+
+
+
+const don = document.querySelector("#don");
+
+
+
+don.addEventListener("click", () => {
+
+
+    alert("i love you")
+
+})

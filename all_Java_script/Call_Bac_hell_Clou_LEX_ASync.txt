@@ -1,0 +1,273 @@
+
+///syschronus vs aynchronous and different
+
+
+function fun_2() {
+
+
+    console.log("fun_2")
+
+}
+
+
+function fun_1() {
+
+    console.log("fun_1")
+
+
+    fun_2()
+
+}
+
+
+fun_1()
+
+
+
+
+
+
+//://currying
+
+
+function sum(num1) {
+
+
+    return function(num2) {
+
+
+        return function(num3) {
+
+
+            console.log(num1, num2, num3)
+
+            console.log(num1 + num2 + num3)
+
+        }
+
+
+    }
+
+
+}
+
+
+sum(8)(7)(5)
+
+
+
+//CallHell
+
+
+
+//currying
+
+
+function sum(num1) {
+
+
+    return function(num2) {
+
+
+        return function(num3) {
+
+
+            console.log(num1, num2, num3)
+
+            console.log(num1 + num2 + num3)
+
+        }
+
+
+    }
+
+
+}
+
+
+sum(8)(7)(5)
+
+
+
+
+//://what is json covert json raw important
+
+
+var my_name = {
+
+    key_1: "jgal sharma",
+
+    key_2: true,
+
+    key_3: 5
+
+}
+
+
+
+var oject = JSON.stringify(my_name)
+
+console.log(oject)
+typeof(oject)
+
+
+
+
+
+
+
+//lexical important
+
+
+
+
+let a = "i am jugal sharma";
+
+
+
+const fun1 = () => {
+
+
+    let b = " i am kanika sharma ";
+
+    const fun2 = () => {
+
+
+        let c = " i am javascript sharma ";
+
+
+        console.log(a + b + c)
+
+    }
+
+
+    fun2()
+
+
+
+}
+
+
+fun1()
+
+
+
+
+
+
+//://closures
+
+
+ const outerfun = (a) => {
+
+
+     let b = 10;
+
+    const innerFun = () => {
+
+
+        let sum = a + b;
+
+        console.log(sum)
+
+     }
+
+
+    innerFun()
+ }
+
+ outerfun(5);
+
+
+
+
+
+
+
+function one(callback) {
+
+    setTimeout(() => {
+
+        console.log("one")
+
+        callback();
+
+    }, 1000)
+
+}
+
+function two() {
+
+
+    setTimeout(() => {
+
+        console.log("two")
+
+    }, 2000)
+
+}
+
+
+
+
+function three() {
+
+
+    setTimeout(() => {
+
+        console.log("three")
+
+    }, 3000)
+
+}
+
+
+one(function() {
+
+    two();
+    three();
+
+})
+
+
+
+
+
+const move = new Promise((resolve, reject) => {
+
+
+
+    setTimeout(() => {
+
+
+        let ui = "jugal sharma sharma"
+
+        resolve(ui)
+
+    }, 2000)
+
+
+})
+
+
+const one = async() => {
+
+    try {
+
+        const mk = await move;
+
+        console.log(mk)
+
+    } catch (e) {
+
+
+        console.log(e + "this is error")
+
+    }
+
+
+}
+
+one()
+
+

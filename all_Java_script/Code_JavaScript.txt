@@ -1,0 +1,179 @@
+**//DataType
+1:null
+2:undifined
+3:number
+4:string
+5:Nan
+6:bigN
+7:bool
+
+
+**//function
+
+1::function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+
+2::// code here can NOT use carName
+
+function myFunction() {
+  let carName = "Volvo";
+  // code here CAN use carName
+}
+
+// code here can NOT use carName
+
+
+
+
+
+
+
+array**//
+
+1:2d
+2:3d
+3:sort()
+4:length()
+5:push()
+6:unshift
+7:pop()
+8:shift
+9//methods
+1:map
+2:findex
+3:find
+4:filter
+
+
+loop**//
+
+while loop
+
+
+for lopp
+
+
+
+
+**//string
+
+
+1:splice
+
+2:split // mean is string to array form
+
+3:research
+
+4:    console.log(a.replace("s", "S"));
+
+5   console.log(a.includes("hello")) is true and false value
+
+
+6:    console.log(a.search("q")) is value -1
+
+
+
+7:  console.log(a.indexOf("g"))
+
+
+8:    console.log(a.lastIndexOf("g"))
+
+
+
+9//::substring not use nagtive vale not use
+
+
+let sub = ("apple , banana , kiwi");
+
+let su = sub.substring(4, -13)
+
+console.log(su)
+
+
+
+
+//substr
+
+
+let stra = ("apple , banana , kiwi");
+
+let ju = stra.substr(0, -5)
+
+console.log(ju)
+
+
+
+
+
+//://closures
+
+const fun = () => {
+
+    let a = 10;
+
+    const sun = () => {
+
+        let b = 99
+
+
+        console.log(a * b)
+
+
+    }
+
+    sun()
+
+}
+
+fun()
+
+
+
+//lexical important
+
+
+let a = "hi i am jugal sharma";
+
+
+function fun() {
+
+    let b = "i  i am kanika sharma"
+
+
+    function sun() {
+
+
+        let c = "hi  i  am anku";
+
+
+        console.log(a, b, c)
+
+    }
+
+    sun()
+}
+
+fun()
+
+
+//currying://
+
+
+function app(num) {
+
+
+    return function(num1) {
+
+
+        return function(num2) {
+
+            return function(num3) {
+
+                console.log(num, num1, num2, num3)
+            }
+
+        }
+    }
+}
